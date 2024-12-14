@@ -37,10 +37,8 @@ Använd applikationen:
 Välj dina övningar och energinivåer i formuläret.
 - Klicka på "Beräkna återhämtning" för att se rekommendationerna.
 - Om du vill se rådata från modellen, klicka på knappen "Visa rådata".
-Konsol-loggning:
+- Konsol-loggning:
 Om du vill granska AI-modellens förutsägelser och interna data:
-
-
 Öppna webbläsarens utvecklarverktyg (oftast med F12 eller högerklick -> Inspektera).
 Gå till fliken Konsol för att se loggarna.
 
