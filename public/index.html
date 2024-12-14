@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>RecoveryBot</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>RecoveryBot</h1>
+      <form id="exerciseForm">
+        <h3>Välj dina övningar:</h3>
+        <label>
+          <input type="checkbox" name="exercises" value="styrketräning" />
+          Styrketräning
+        </label>
+        <label>
+          <input type="checkbox" name="exercises" value="löpning" />
+          Löpning
+        </label>
+        <label>
+          <input type="checkbox" name="exercises" value="cykling" />
+          Cykling
+        </label>
+        <label>
+          <input type="checkbox" name="exercises" value="yoga" />
+          Yoga
+        </label>
+        <label>
+          <input type="checkbox" name="exercises" value="stretching" />
+          Stretching
+        </label>
+        <label>
+          <input type="checkbox" name="exercises" value="simning" />
+          Simning
+        </label>
+        <button type="button" id="submitBtn">Beräkna återhämtning</button>
+      </form>
+
+      <div id="recommendations">
+        <h3>Rekommendationer:</h3>
+        <p><strong>Stretch:</strong> <span id="stretch"></span></p>
+        <p><strong>Mat:</strong> <span id="food"></span></p>
+      </div>
+
+      <!-- Rådata-sektionen flyttas hit -->
+      <div id="rawDataContainer">
+        <button id="toggleRawDataBtn">Visa rådata</button>
+        <div id="rawData" style="display: none">
+          <!-- Rådata från servern kommer att fyllas här -->
+        </div>
+      </div>
+    </div>
+
+    <script src="app.js"></script>
+  </body>
+</html>
