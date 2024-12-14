@@ -1,5 +1,4 @@
 import brain from "brain.js";
-import { relu } from "brain.js/dist/activation";
 
 // Skapa och träna en förenklad neural nätverksmodell
 const net = new brain.NeuralNetwork({
