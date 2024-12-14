@@ -1,7 +1,11 @@
 import brain from "brain.js";
+import { relu } from "brain.js/dist/activation";
 
 // Skapa och träna en förenklad neural nätverksmodell
-const net = new brain.NeuralNetwork();
+const net = new brain.NeuralNetwork({
+  hiddenLayers: [3],
+  activation: "relu",
+});
 
 const trainingData = [
   // Låg energi och fokus → Ingen stretch eller mat
